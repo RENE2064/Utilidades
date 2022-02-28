@@ -1,0 +1,40 @@
+"base css": {
+  "prefix":"base","body": [
+    "html { \nbox-sizing: border-box;\nfont-size:62.5%;\n}\n*,*::before,*::after{\nbox-sizing:border-box;\n}\nimg{\nmax-width:100%;\ndisplay:block\n}\nbody{\nfont-size: 1.6rem;\nline-height:2;\n}\nh1,h2,h3{\nmargin:0 0 2rem 0\n}\nh1{\nfont-size:5rem;\n}\nh2{\nfont-size:4rem;\n}\nh3{\nfont-size:3rem;\n}\na{\ntext-decoration:none;\ncolor:#000;\n}"];
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+h1,
+h2,
+h3 {
+  margin: 0 0 2rem 0;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
