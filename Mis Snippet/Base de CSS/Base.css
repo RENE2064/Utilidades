@@ -1,7 +1,9 @@
 "base css": {
   "prefix":"base","body": [
-    "html { \nbox-sizing: border-box;\nfont-size:62.5%;\n}\n*,*::before,*::after{\nbox-sizing:border-box;\n}\nimg{\nmax-width:100%;\ndisplay:block\n}\nbody{\nfont-size: 1.6rem;\nline-height:2;\n}\nh1,h2,h3{\nmargin:0 0 2rem 0\n}\nh1{\nfont-size:5rem;\n}\nh2{\nfont-size:4rem;\n}\nh3{\nfont-size:3rem;\n}\na{\ntext-decoration:none;\ncolor:#000;\n}"];
+    "\n/*Globales*/\n\nhtml { \nbox-sizing: border-box;\nfont-size:62.5%;\n}\n*,*::before,*::after{\nbox-sizing:inherit;\n}\nimg{\nmax-width:100%;\ndisplay:block\n}\nbody{\nfont-size: 1.6rem;\nline-height:2;\n}\nh1,h2,h3{\nmargin:0 0 2rem 0\n}\nh1{\nfont-size:5rem;\n}\nh2{\nfont-size:4rem;\n}\nh3{\nfont-size:3rem;\n}\na{\ntext-decoration:none;\ncolor:#000;\n}\n\n/*Utilidades*/\n\n.container{\nmax-width:120rem;\nwidth:90%;\nmargin: 0 auto;\n}\n.text-center{\ntext-align:center\n}"];
 }
+
+/*Globales*/
 
 html {
   box-sizing: border-box;
@@ -10,7 +12,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 img {
   max-width: 100%;
@@ -37,4 +39,15 @@ h3 {
 a {
   text-decoration: none;
   color: #000;
+}
+
+/*Utilidades*/
+
+.container {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
 }

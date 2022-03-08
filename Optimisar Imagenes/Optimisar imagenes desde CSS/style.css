@@ -1,0 +1,206 @@
+:root {
+  --primario: #1073ba;
+  --secundario: #00da55;
+  --gris: #3b3b3b;
+  --blanco: #fff;
+  --negro: #1f1e1e;
+  --grisClaro: #e1e1e1;
+  --separacion: 5rem;
+  --fuentePrincipal: "Roboto", sans-serif;
+  --funteSecundaria: "Lato", sans-serif;
+}
+
+/* Globales */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+body {
+  font-family: var(--fuentePrincipal);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  font-family: var(--funteSecundaria);
+  margin: calc(var(--separacion) / 2) 0;
+}
+h1 {
+  font-size: 4, 4rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Utilidades */
+
+.container {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+.header-text p {
+  margin: 0;
+}
+
+/* Degradados */
+
+.degradado-verde {
+  color: transparent;
+  background: linear-gradient(to right, var(--primario) 0%, var(--secundario));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Sobre techPRO */
+
+.notavif.notwebp .sobre-techpro {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--primario) 0%
+    ),
+    url(../img/imagen-mujer.jpg);
+}
+.webp .sobre-techpro {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--primario) 0%
+    ),
+    url(../img/imagen-mujer.webp);
+}
+.avif .sobre-techpro {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--primario) 0%
+    ),
+    url(../img/imagen-mujer.avif);
+}
+.sobre-techpro {
+  background-position: right;
+  background-repeat: repeat, no-repeat;
+  background-size: 100%, 110rem;
+}
+@media (min-width: 768px) {
+  .notavif.notwebp .sobre-techpro {
+    background-image: linear-gradient(
+        to left,
+        transparent 50%,
+        var(--primario) 0%
+      ),
+      url(../img/imagen-mujer.jpg);
+  }
+  .webp .sobre-techpro {
+    background-image: linear-gradient(
+        to left,
+        transparent 50%,
+        var(--primario) 0%
+      ),
+      url(../img/imagen-mujer.jpg);
+  }
+  .avif .sobre-techpro {
+    background-image: linear-gradient(
+        to left,
+        transparent 50%,
+        var(--primario) 0%
+      ),
+      url(../img/imagen-mujer.jpg);
+  }
+  .sobre-techpro {
+    background-repeat: repeat, no-repeat;
+  }
+}
+@media (min-width: 1600px) {
+  .sobre-techpro {
+    background-size: 100%, 210rem;
+  }
+}
+.sobre-tech-grid {
+  display: grid;
+  grid-template-rows: repeat(2, 40rem);
+  row-gap: var(--separacion);
+}
+@media (min-width: 768px) {
+  .sobre-tech-grid {
+    grid-template-rows: unset;
+    row-gap: unset;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    padding: calc(var(--separacion) * 2) 0;
+  }
+}
+.texto-sobre-tech {
+  grid-row: 2 / 3;
+  color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: var(--separacion);
+}
+@media (min-width: 768px) {
+  .texto-sobre-tech {
+    padding-bottom: 0;
+  }
+}
+.texto-sobre-tech h2 {
+  font-size: 4rem;
+}
+.texto-sobre-tech p {
+  font-size: 2rem;
+  line-height: 2;
+}
+
+/* .notavif.notwebp .sobre-techpro {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--primario) 0%
+    ),
+    url(../img/imagen-mujer.jpg);
+}
+.webp .sobre-techpro {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--primario) 0%
+    ),
+    url(../img/imagen-mujer.webp);
+}
+.avif .sobre-techpro {
+  background-image: linear-gradient(
+      to bottom,
+      transparent 50%,
+      var(--primario) 0%
+    ),
+    url(../img/imagen-mujer.avif);
+}
+.sobre-techpro {
+  background-position: right;
+  background-repeat: repeat, no-repeat;
+  background-size: 100%, 110rem;
+} */
